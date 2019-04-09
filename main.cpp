@@ -12,8 +12,7 @@ questao01(char* frase[]){
 	#pragma omp parallel 
 	{
 		
-	}
-	
+	}	
 }
 
 int main(){
