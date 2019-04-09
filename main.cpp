@@ -1,19 +1,23 @@
-/* 
- * File:   main.cpp
- * Author: JMALVINO
- *
- * Created on 9 de Abril de 2019, 19:28
- */
+#include<stdio.h>
+#include<omp.h>
 
-#include <cstdlib>
-
-using namespace std;
-
-/*
- * 
- */
-int main(int argc, char** argv) {
-
-    return 0;
+recebeFrase(){
+	char frase[200];
+  	printf("Digite a frase: ");
+	gets(frase);
+	printf("A frase armazenada foi: %s", frase);
+}
+questao01(char* frase[]){
+	int quantLetras[26];
+	#pragma omp parallel 
+	{
+		
+	}
+	
 }
 
+int main(){
+	printf("%s",recebeFrase());
+
+	
+}
